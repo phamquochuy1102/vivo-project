@@ -1,0 +1,150 @@
+@media screen and (max-width:767px){
+    .navbar{
+        background-color: black;
+        padding: 6px 20px;
+        color:white;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 99;
+        width: 100%;
+    }
+    .list-icon{
+        display: block;
+    }
+    .navbar__list{
+        display: none;
+    }
+    .intro__background{
+       background-image: url(../img/slideshow-1-mob.jpg);
+       background-size: 100% 100%;
+    }
+    .type-imgs-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .technology-wrapper h1{
+        font-size: 1.8rem;
+        padding-top: 3rem;
+        margin-bottom: 1.8rem;
+    }
+    .technology-small-part h2{
+        font-size: 1.3rem;
+    }
+    .technology-type{
+        flex-direction: column;
+    }
+    .btn-more{
+        width: 12rem;
+    }
+    .explore{
+        padding: 1rem 0 1rem 0;
+    }
+    .explore-text{
+        width: 100%;
+    }
+    .explore-text h1{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    .explore-text h4{
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+    .explore-1-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .explore-first{
+        margin: 0;
+    }
+    .explore-second{
+        margin: 0;
+    }
+    .first-text h1{
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+    .first-text h3{
+        font-size: 0.8rem;
+        margin-bottom: 1.2rem;
+        font-weight: 500;
+    }
+    .second-text h1{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+    .second-text h3{
+        font-size: 0.8rem;
+        margin-bottom: 1.2rem;
+        font-weight: 500;
+    }
+    .products-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .product-text h3{
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+    .above-info-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .above-info{
+        padding:2rem 1rem;
+    }
+    .above-info-wrapper>div:first-child{
+        margin-bottom: 1rem;
+    }
+    .above-info-wrapper>div:nth-child(4){
+        padding-left: 2rem;
+    }
+    .above-info-wrapper>div:nth-child(2){
+        padding-left: 2rem;
+    }
+    .info-link a{
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: rgb(58, 58, 58);
+        line-height: 2rem;
+    }
+    .below-wrapper-info{
+        display: inline-block;
+        padding:0rem 0rem;
+        align-items: center;
+        text-align: center;
+    }
+    .below-info-text{
+        padding: 0 1rem;
+    }
+    .below-info-text h1{
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    .below-text{
+        color: rgb(53, 53, 53);
+        font-size: 0.9rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+    }
+    .footer-wrapper{
+        padding:0.7rem 1rem;
+    }
+    .follow-wrapper {
+        font-size: 0.8rem;
+    }
+    .back-to-top{
+        font-size: 0.8rem;
+    }
+    .footer-text{
+        font-size: 0.8rem;
+    }
+}

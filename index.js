@@ -1,0 +1,1 @@
+var bg1=document.getElementById("bg-technology"); console.log(bg1);

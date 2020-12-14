@@ -1,0 +1,559 @@
+/*DEFAULT SETUP*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow-x: hidden;
+    font-family: 'Work Sans', sans-serif;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+    cursor: pointer;
+}
+
+/*NAVBAR*/
+
+.navbar{
+    background-color: black;
+    padding: 12px 135px;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.menu-mobile{
+    padding: 0;
+}
+
+.list-icon{
+    text-align: center;
+    align-items: center;
+    margin-top: 1px;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar__logo{
+    text-align: center;
+    align-items: center;
+}
+
+.navbar__list{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar__list-item{
+    padding: 0 1.2rem;
+}
+
+.navbar__list-item-link{
+    color: white;
+    font-size: 1rem;
+    transition: 0.2s ease-in-out;
+}
+
+.navbar__list-item-link:hover,
+.active
+{
+    color: gray;
+}
+
+.navbar__search{
+    font-weight: 400;
+    margin-top: 1px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navbar__search:hover{
+    color: gray;
+}
+
+/*Introduction*/
+.bg-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-fixed{
+    background-attachment: fixed;
+}
+
+.full-height{
+    height: 100vh;
+}
+
+.intro__background{
+    background-image: url(../img/slideshow-1.jpg);
+}
+
+.intro img{
+    width: 100%;
+    height: auto;
+}
+
+/*Type section*/
+
+.type-imgs-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.type-img-wrapper{
+    position: relative;
+}
+
+.type-img{
+    width: 100%;
+    height: 400px;
+}
+
+.type-text-wrapper{
+    position: absolute;
+    left:0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:0 45px;
+    margin-top: 40px;
+    color: white;
+}
+
+.type-title{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.type-describe{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn-more{
+    font-weight: 500;
+    height: 2.5rem;
+    width: 12rem;
+    border: 1px solid white;
+    border-radius: 2rem;
+    font-size: 0.95rem;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    outline: none;
+}
+
+.btn-more:hover{
+    background-color: rgb(10, 61, 202);
+}
+
+
+/*Technology CSS*/
+
+.technology-wrapper{
+    color: white;
+}
+
+.technology-wrapper h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.technology-small-part h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.technology-type{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.technology-type-link{
+    padding: 1rem;
+    color: grey;
+    font-size: 1rem;
+}
+
+.technology-type-link a{
+    padding: 6px 0rem;
+}
+
+.technology-type-link a:hover
+{
+    color: white;
+}
+
+.technology-type .techactive{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.background-image-change1{
+    background-image: url(../img/CAMERA-gimbal-1440x800.jpg);
+    transition: 0.3s ease-in-out;
+}
+
+.background-image-change2{
+    background-image: url(../img/man-hinh-thac-nuoc-1400x800.jpg);
+    transition: 0.3s ease-in-out;
+}
+
+.background-image-change3{
+    background-image: url(../img/chup-dem.jpg);
+    transition: 0.3s ease-in-out;
+}
+
+.technology-more{
+    text-align: center;
+}
+
+/*Explore CSS*/
+.explore{
+    padding: 1rem;
+    background-color: white;
+}
+
+.explore-background{
+    background-image: url(../img/su-kien-ra-mat-san-pham-vivo-v20-1.jpg);
+}
+
+.explore-wrapper{
+    position: relative;
+}
+
+.overlay{
+    background-color:rgba(0, 0, 0, 0.45); 
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} 
+
+.explore-text{
+    position: absolute;
+    left:50%;
+    top: 0;
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    -webkit-transform: translateX(-50%);
+}
+
+.explore-text h5{
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.explore-text h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.explore-text h4{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.explore-1-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 0.5rem 1rem 0.5rem;
+    color: white;
+}
+
+.first-background{
+    background-image: url(../img/explore-first.jpg);
+}
+
+.second-background{
+    background-image: url(../img/explore-2nd.jpg);
+}
+
+.explore-first{
+    margin: 0 0.5rem 0 0.5rem;
+    position: relative;
+}
+
+.explore-second{
+    margin: 0 0.5rem 0 0.5rem;
+    position: relative;
+}
+
+.modal-1{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-2{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.first-text{
+    position: absolute;
+    left:50%;
+    top: 0;
+    width: 100%;
+   -webkit-transform: translateX(-50%);
+    text-align: center;
+    padding:0 40px;
+    margin-top: 40px;
+    color: white;
+}
+
+.first-text h5{
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.first-text h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.first-text h3{
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+
+.second-text{
+    position: absolute;
+    left:50%;
+    top: 0;
+    width: 100%;
+   -webkit-transform: translateX(-50%);
+    text-align: center;
+    padding:0 40px;
+    margin-top: 40px;
+    color: white;
+}
+
+.second-text h5{
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.second-text h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.second-text h3{
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+}
+
+/*PRODUCT ABOUT*/
+.products-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem 0.5rem;
+}
+
+.product-wrapper{
+    margin:0 0.5rem;
+    position: relative;
+}
+
+.product-background1{
+    background-image: url(../img/jovi.jpg);
+}
+
+.product-background2{
+    background-image: url(../img/new\ screen.jpg);
+}
+
+.product-background3{
+    background-image: url(../img/funtouchOS.jpg);
+}
+
+.product-text{
+    position: absolute;
+    top:0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    text-align: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.product-text button{
+    border-color: black;
+    color: black;
+    transition: 0.5s ease-in-out;
+    width: 9rem;
+}
+
+.product-text button:hover{
+    color: white;
+    border: none;
+}
+
+.product-text h5{
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.product-text h3{
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+/*Contacts*/
+.contact{
+    background-image: linear-gradient(rgb(246, 244, 244),rgb(231, 230, 230));
+}
+
+.above-info-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px 0;
+    border-bottom: 1px solid #c3c3c3;
+    border-top: 1px solid #c3c3c3;
+}
+
+.above-info{
+    padding:3rem 8.125rem;
+}
+
+.info-link a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(58, 58, 58);
+    line-height: 2rem;
+}
+
+.info-link a:hover{
+    color: grey;
+}
+
+.below-wrapper-info{
+    padding:0rem 8.125rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.below-info-text{
+    padding: 0 60px 0 0;
+}
+
+.below-info-text h1{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.below-text{
+    color: rgb(53, 53, 53);
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+.BCTconfirm img{
+    width: 150px;
+    height: 60px;
+}
+
+.footer-wrapper{
+    background-color: rgb(36, 36, 36);
+    color:grey;
+    padding:0.7rem 8.125rem;
+    margin-top: 2.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-wrapper p{
+    margin-top: 0.3rem;
+}
+
+.follow-wrapper{
+    display: flex;
+}
+
+.contact-icon{
+    font-size: 1.8rem;
+    padding: 0 0.2rem;
+    cursor: pointer;
+}
+
+.contact-icon:hover{
+    color: white;
+}
+
+.back-to-top{
+    display: flex;
+    cursor: pointer;
+}
+
+.back-to-top i{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 0 0.2rem;
+}
+
+.back-to-top:hover{
+    color: white;
+}
+
+/*Footer*/
+
+.footer-text{
+    background-color: black;
+    padding: 1rem;
+    color: blanchedalmond;
+    text-align: center;
+    align-items: center;
+}

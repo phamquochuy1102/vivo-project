@@ -34,7 +34,7 @@ a{
     padding: 12px 135px;
     color:white;
     position: fixed;
-    z-index: 99;
+    z-index: 999;
     width: 100%;
     text-align: center;
     overflow: hidden;

@@ -1,12 +1,18 @@
+@media screen and (min-width:1200px){
+    .menu-mobile{
+        display: none !important;
+    }
+    .menu-modal{
+        display: none !important;
+    }
+}
 @media screen and (max-width:767px){
     .navbar{
         background-color: black;
-        padding: 6px 20px;
+        padding: 8px 20px 6px;
         color:white;
         display: flex;
         justify-content: space-between;
-        position: fixed;
-        z-index: 99;
         width: 100%;
     }
     .list-icon{
@@ -17,21 +23,26 @@
     }
     .intro__background{
        background-image: url(../img/slideshow-1-mob.jpg);
-       background-size: 100% 100%;
+       background-size: 100% 95%;
     }
     .type-imgs-wrapper{
         grid-template-columns: 1fr;
     }
     .technology-wrapper h1{
         font-size: 1.8rem;
-        padding-top: 3rem;
-        margin-bottom: 1.8rem;
+        padding-top: 2.5rem;
+        margin-bottom: 1.2rem;
     }
     .technology-small-part h2{
         font-size: 1.3rem;
     }
     .technology-type{
         flex-direction: column;
+    }
+    .technology-type-link{
+        padding: 0.5rem;
+        color: grey;
+        font-size: 1rem;
     }
     .btn-more{
         width: 12rem;
@@ -43,12 +54,12 @@
         width: 100%;
     }
     .explore-text h1{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-weight: 600;
         margin-bottom: 1rem;
     }
     .explore-text h4{
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 500;
         margin-bottom: 1.5rem;
     }
@@ -63,13 +74,16 @@
     .explore-second{
         margin: 0;
     }
+    .first-text{
+        padding: 0 20px;
+    }
     .first-text h1{
-        font-size: 1.1rem;
-        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        margin-bottom: 1.4rem;
         font-weight: 600;
     }
     .first-text h3{
-        font-size: 0.8rem;
+        font-size: 1rem;
         margin-bottom: 1.2rem;
         font-weight: 500;
     }
@@ -79,7 +93,7 @@
         font-weight: 600;
     }
     .second-text h3{
-        font-size: 0.8rem;
+        font-size: 1rem;
         margin-bottom: 1.2rem;
         font-weight: 500;
     }
@@ -109,7 +123,7 @@
         padding-left: 2rem;
     }
     .info-link a{
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-weight: 500;
         color: rgb(58, 58, 58);
         line-height: 2rem;
@@ -125,13 +139,13 @@
     }
     .below-info-text h1{
         font-size: 1rem;
-        font-weight: 500;
+        font-weight: 600;
         padding: 0;
         margin-bottom: 1rem;
     }
     .below-text{
         color: rgb(53, 53, 53);
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-weight: 500;
         line-height: 1.8rem;
     }
@@ -139,12 +153,124 @@
         padding:0.7rem 1rem;
     }
     .follow-wrapper {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .back-to-top{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .footer-text{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    /*SP Res*/
+    .sp-intro{
+        max-width: initial;
+        width: 560px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        position: relative;
+    }
+    .support-text{
+        margin-top: 3rem;
+    }
+    .support-text h1{
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 0.3rem;
+    }
+    .support-text p{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .support-text input{
+        width: 280px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    .services-wrapper{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .service-wrapper{
+        margin: 1rem 1rem 0.5rem;
+    }
+    .service-wrapper h1{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+    .service-wrapper p{
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+    .faq-nav{
+        display: none;
+    }
+    .faq-detail{
+        margin-left: 0rem;
+        padding-left: 0rem;
+        border: none;
+        width: 100%;
+    }
+    .faq-wrapper{
+        padding: 1rem;
+    }
+    .faq-info{
+        grid-template-columns: 1fr;
+    }
+    .faq-wrapper h1{
+        margin-bottom: 2rem;
+    }
+    .faq-wrapper h1{
+        font-size: 2.4rem;
+    }
+    .detail-item-wrapper h2{
+        font-size: 1.2rem;
+    }
+    .detail-item-wrapper p{
+        font-size: 1rem;
+    }
+    .support-contact-wrapper{
+        padding:2rem 1rem;
+    }
+    .support-contact-wrapper h1{
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+    .support-contact-form-wrap{
+        padding: 2rem 0;
+    }
+    .support-hotline h2{
+        font-size: 1.4rem;
+    }
+    .support-hotline p{
+        font-size: 1.2rem;
+    }
+    .support-form{
+        margin-top: 2rem;
+    }
+    .support-form h2{
+        font-size: 1.4rem;
+    }
+    .support-form p{
+        font-size: 1.2rem;
+    }
+    .form{
+        width: 300px;
+        margin: auto;
+    }    
+    .form>form>div>label{
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    .form>form>div>input{
+        font-size: 1.2rem;
+    }
+    .form>form>div>textarea{
+        font-size: 1.2rem;
+        height: 10rem;
+        margin-bottom: 1rem;
     }
 }

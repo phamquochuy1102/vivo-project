@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivo Vietnam | Smartphone Vivo</title>
+    <title>Vivo Vietnam | Vivo Smartphone</title>
     <link rel="shortcut icon" href="./assets/img/VIVO-icon.png">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -34,7 +34,7 @@
                     </a>
                 </div>
                 <div class="navbar__list-item">
-                    <a href="" class="navbar__list-item-link">
+                    <a href="./product.html" class="navbar__list-item-link">
                         Sản Phẩm
                     </a>
                 </div>
@@ -44,12 +44,12 @@
                     </a>
                 </div>
                 <div class="navbar__list-item">
-                    <a href="" class="navbar__list-item-link">
+                    <a href="./explore.html" class="navbar__list-item-link">
                         Khám phá
                     </a>
                 </div>
                 <div class="navbar__list-item">
-                    <a href="" class="navbar__list-item-link">
+                    <a href="./support.html" class="navbar__list-item-link">
                         Hỗ trợ
                     </a>
                 </div>
@@ -59,11 +59,43 @@
                 <i class='bx bx-search'></i>
             </div>
         </div>
+        <div class="menu-modal">
+            <div class="close-icon">
+                <i class='bx bx-x'></i>
+            </div>
+            <div class="menu-mob-list">
+                <div class="menu-mob-item">
+                    <a href="./index.html" class="navbar__list-item-link active">
+                        Trang Chủ
+                    </a>
+                </div>
+                <div class="menu-mob-item">
+                    <a href="./product.html" class="navbar__list-item-link">
+                        Sản Phẩm
+                    </a>
+                </div>
+                <div class="menu-mob-item">
+                    <a href="" class="navbar__list-item-link">
+                        Funtouch OS
+                    </a>
+                </div>
+                <div class="menu-mob-item">
+                    <a href="./explore.html" class="navbar__list-item-link">
+                        Khám phá
+                    </a>
+                </div>
+                <div class="menu-mob-item">
+                    <a href="./support.html" class="navbar__list-item-link">
+                        Hỗ trợ
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!--Intro slide-->
     <section class="intro">
-        <div class="intro__background bg-img full-height bg-fixed">
+        <div class="intro__background bg-img full-height">
         </div>
     </section>
 
@@ -115,20 +147,20 @@
     </section>
 
     <!--Technology Section-->
-    <section class="technology">
+    <section class="technology background-base">
         <div id="bg-technology" class="technology-wrapper background-image-change1 full-height bg-img">
             <h1>NGƯỜI KIẾN TẠO</h1>
             <div class="technology-small-part">
                 <h2>Những công nghệ đột phá nhất</h2>
                 <div class="technology-type">
                     <div class="technology-type-link ">
-                        <a class="techactive" id="bg-1">Hệ thống camera Gimbal</a>
+                        <a class="type-btn techactive" id="bg-1">Hệ thống camera Gimbal</a>
                     </div>
                     <div class="technology-type-link">
-                        <a class="" id="bg-2">Màn Hình Thác Nước</a>
+                        <a class="type-btn" id="bg-2">Màn Hình Thác Nước</a>
                     </div>
                     <div class="technology-type-link">
-                        <a class="" id="bg-3">Chụp Đêm Siêu Việt</a>
+                        <a class="type-btn" id="bg-3">Chụp Đêm Siêu Việt</a>
                     </div>
                 </div>
                 <div id="tech-btn" class="technology-more">
@@ -137,7 +169,7 @@
             </div>
         </div>
     </section>
-
+    
     <!--Explore Section-->
     <section class="explore">
        <div class="explore-wrapper">
@@ -333,100 +365,15 @@
         </div>
         
         <div class="footer-text">
-            Copyright © 2020 Mini Dev. 
+            Copyright © 2020 Huy Pham. 
             All rights reserved.
         </div>
     </footer>
+
+    
+
 </body>
 
-<script>
-    //change technology section background
-     var bg1=document.getElementById("bg-1");
-     bg1.addEventListener("click", changeBG1);
-     function changeBG1(){
-         var getBGElement=document.getElementById("bg-technology");
-         if(getBGElement.classList.contains("background-image-change2")){
-            getBGElement.classList.remove("background-image-change2");
-            getBGElement.classList.add('background-image-change1');
-        }  
-         else if(getBGElement.classList.contains("background-image-change3")){
-            getBGElement.classList.remove("background-image-change3");
-            getBGElement.classList.add('background-image-change1');
-        }   
-    }
-    var bg2=document.getElementById("bg-2");
-    bg2.addEventListener("click", changeBG2);
-     function changeBG2(){
-         var getBGElement=document.getElementById("bg-technology");
-         if(getBGElement.classList.contains("background-image-change1")){
-            getBGElement.classList.remove("background-image-change1");
-            getBGElement.classList.add('background-image-change2');
-        }  
-         else if(getBGElement.classList.contains("background-image-change3")){
-            getBGElement.classList.remove("background-image-change3");
-            getBGElement.classList.add('background-image-change2');
-        }   
-    }    
-    var bg3=document.getElementById("bg-3");
-    bg3.addEventListener("click", changeBG3);
-     function changeBG3(){
-         var getBGElement=document.getElementById("bg-technology");
-         if(getBGElement.classList.contains("background-image-change1")){
-            getBGElement.classList.remove("background-image-change1");
-            getBGElement.classList.add('background-image-change3');
-        }  
-         else if(getBGElement.classList.contains("background-image-change2")){
-            getBGElement.classList.remove("background-image-change2");
-            getBGElement.classList.add('background-image-change3');
-        }   
-    }
-    //change technology link state
-    bg1.addEventListener("click",changeState1);
-    function changeState1(){
-        var btnMore=document.getElementById("tech-btn");
-        btnMore.style.display='block';
-        if(bg2.classList.contains("techactive"))
-        {
-            bg2.classList.remove("techactive");
-            bg1.classList.add("techactive");
-        }
-        else if(bg3.classList.contains("techactive"))
-        {
-            bg3.classList.remove("techactive");
-            bg1.classList.add("techactive");
-        }
-    }
-    bg2.addEventListener("click",changeState2);
-    function changeState2(){
-        var btnMore=document.getElementById("tech-btn");
-        btnMore.style.display='none';
-        if(bg1.classList.contains("techactive"))
-        {
-            bg1.classList.remove("techactive");
-            bg2.classList.add("techactive");
-        }
-        else if(bg3.classList.contains("techactive"))
-        {
-            bg3.classList.remove("techactive");
-            bg2.classList.add("techactive");
-        }
-    }
-    bg3.addEventListener("click",changeState3);
-    function changeState3(){
-        var btnMore=document.getElementById("tech-btn");
-        btnMore.style.display='none';
-        if(bg1.classList.contains("techactive"))
-        {
-            bg1.classList.remove("techactive");
-            bg3.classList.add("techactive");
-        }
-        else if(bg2.classList.contains("techactive"))
-        {
-            bg2.classList.remove("techactive");
-            bg3.classList.add("techactive");
-        }
-    }
-
-</script>
-
+<!--Script file-->
+<script src="./index.js"></script>
 </html> 

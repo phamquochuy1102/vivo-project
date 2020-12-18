@@ -95,10 +95,12 @@
 
     <!--Intro slide-->
     <section class="intro">
-        <div class="intro__background bg-img full-height">
-        </div>
+        <picture class="intro__background">
+            <source media="(max-width:767px)" srcset="https://www.vivosmartphone.vn/uploads/product/v20/vivo-v20-6-mb.jpg">
+            <img src="./assets/img/slideshow-1.jpg" alt="VIVO">
+        </picture>
     </section>
-
+   
     <!--Type Section-->
     <section class="type-section">
         <div class="container">
@@ -148,23 +150,28 @@
 
     <!--Technology Section-->
     <section class="technology background-base">
-        <div id="bg-technology" class="technology-wrapper background-image-change1 full-height bg-img">
+        <div class="technology-wrapper">
             <h1>NGƯỜI KIẾN TẠO</h1>
-            <div class="technology-small-part">
-                <h2>Những công nghệ đột phá nhất</h2>
-                <div class="technology-type">
-                    <div class="technology-type-link ">
-                        <a class="type-btn techactive" id="bg-1">Hệ thống camera Gimbal</a>
-                    </div>
-                    <div class="technology-type-link">
-                        <a class="type-btn" id="bg-2">Màn Hình Thác Nước</a>
-                    </div>
-                    <div class="technology-type-link">
-                        <a class="type-btn" id="bg-3">Chụp Đêm Siêu Việt</a>
-                    </div>
+            <div class="technology-info">
+                <div class="picture">
+                    <img src="./assets/img/CAMERA-gimbal-1440x800.jpg" alt="" id="tech-bg">
                 </div>
-                <div id="tech-btn" class="technology-more">
-                    <button class="btn-more">Tìm Hiểu Thêm</button>
+                <div class="technology-small-part">
+                    <h2>Những công nghệ đột phá nhất</h2>
+                    <div class="technology-type">
+                        <div class="technology-type-link ">
+                            <a class="type-btn techactive">Hệ thống camera Gimbal</a>
+                        </div>
+                        <div class="technology-type-link">
+                            <a class="type-btn">Màn Hình Thác Nước</a>
+                        </div>
+                        <div class="technology-type-link">
+                            <a class="type-btn">Chụp Đêm Siêu Việt</a>
+                        </div>
+                    </div>
+                    <div id="tech-btn" class="technology-more">
+                        <button class="btn-more">Tìm Hiểu Thêm</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -373,7 +380,6 @@
     
 
 </body>
-
 <!--Script file-->
 <script src="./index.js"></script>
 </html> 

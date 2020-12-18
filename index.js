@@ -24,54 +24,8 @@ function modalClose(){
     }
 }
 
-
-
 //change technology section background
-     var bg1=document.getElementById("bg-1");
-     var bg2=document.getElementById("bg-2");
-     var bg3=document.getElementById("bg-3");
-     var btn=document.getElementById("tech-btn");
-     bg1.addEventListener("click", changeBG1);
-     function changeBG1(){
-         var getBGElement=document.getElementById("bg-technology");
-         btn.style.display="block";
-         if(getBGElement.classList.contains("background-image-change2")){
-            getBGElement.classList.remove("background-image-change2");
-            getBGElement.classList.add('background-image-change1');
-        }  
-         else if(getBGElement.classList.contains("background-image-change3")){
-            getBGElement.classList.remove("background-image-change3");
-            getBGElement.classList.add('background-image-change1');
-        }   
-    }
-    bg2.addEventListener("click", changeBG2);
-     function changeBG2(){
-         var getBGElement=document.getElementById("bg-technology");
-         btn.style.display="none";
-         if(getBGElement.classList.contains("background-image-change1")){
-            getBGElement.classList.remove("background-image-change1");
-            getBGElement.classList.add('background-image-change2');
-        }  
-         else if(getBGElement.classList.contains("background-image-change3")){
-            getBGElement.classList.remove("background-image-change3");
-            getBGElement.classList.add('background-image-change2');
-        }   
-    }    
-    bg3.addEventListener("click", changeBG3);
-     function changeBG3(){
-         var getBGElement=document.getElementById("bg-technology");
-         btn.style.display="none";
-         if(getBGElement.classList.contains("background-image-change1")){
-            getBGElement.classList.remove("background-image-change1");
-            getBGElement.classList.add('background-image-change3');
-        }  
-         else if(getBGElement.classList.contains("background-image-change2")){
-            getBGElement.classList.remove("background-image-change2");
-            getBGElement.classList.add('background-image-change3');
-        }   
-    }
     //change technology link state
-    var getCover=document.getElementById('bg-technology');
     var typeBtns=document.getElementsByClassName('type-btn');
     for(var i=0; i<typeBtns.length; i++){
         typeBtns[i].addEventListener("click",function(){
@@ -80,5 +34,23 @@ function modalClose(){
             this.className+=" techactive";
         });
     }
+    //change background
+    var techBtn=document.getElementById("tech-btn");
+    typeBtns[0].addEventListener("click",changebg);
+    function changebg(){
+        techBtn.style.display="block";
+        document.getElementById("tech-bg").src="https://www.vivosmartphone.vn/uploads/home/CAMERA-gimbal-1440x800.jpg"
+    }
 
+    typeBtns[1].addEventListener("click",changebg1);
+    function changebg1(){
+       document.getElementById("tech-bg").src="https://www.vivosmartphone.vn/uploads/home/man-hinh-thac-nuoc-1400x800.jpg"
+       techBtn.style.display="none";
+    }
+
+    typeBtns[2].addEventListener("click",changebg2);
+    function changebg2(){
+        techBtn.style.display="none";
+        document.getElementById("tech-bg").src="https://www.vivosmartphone.vn/uploads/page/home/chup-dem.jpg"
+    }
 

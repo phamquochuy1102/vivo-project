@@ -24,7 +24,7 @@ a{
 
 /*NAVBAR*/
 .intro{
-    padding-top: 50px;
+    padding-top: 45px;
 }
 
 .navbar{
@@ -83,7 +83,7 @@ a{
 
 .list-icon{
     text-align: center;
-    margin-top: 0px;
+    margin-top: -2px;
     font-size: 2rem;
     cursor: pointer;
     display: block;
@@ -136,7 +136,7 @@ a{
 .bg-img{
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .bg-fixed{
@@ -147,8 +147,9 @@ a{
     height: 100vh;
 }
 
-.intro__background{
-    background-image: url(../img/slideshow-1.jpg);
+.intro__background img{
+   width: 100%;
+   height: auto;
 }
 
 
@@ -214,10 +215,14 @@ a{
 
 .background-base{
     background-color: black;
+    height: 800px;
+    margin-bottom: 1rem;
 }
 
 .technology-wrapper{
     color: white;
+    padding-top: 2rem;
+    width: 100%;
 }
 
 .technology-wrapper h1{
@@ -228,11 +233,31 @@ a{
     margin-bottom: 0.5rem;
 }
 
+.technology-info{
+    position: relative;
+}
+
+.technology-info img{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+}
+
+.technology-small-part{
+    z-index: 100;
+    position: absolute;
+    top:2rem;
+    left:50%;
+    -webkit-transform: translateX(-50%);
+}
+
 .technology-small-part h2{
     text-align: center;
     font-weight: 500;
     font-size: 1.8rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .technology-type{
@@ -245,7 +270,7 @@ a{
 .technology-type-link{
     padding: 1rem;
     color: grey;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .technology-type-link a{
@@ -260,21 +285,6 @@ a{
 .technology-type .techactive{
     color: white;
     border-bottom: 1px solid white;
-}
-
-.background-image-change1{
-    background-image: url(../img/CAMERA-gimbal-1440x800.jpg);
-    transition: 0.3s ease-in-out;
-}
-
-.background-image-change2{
-    background-image: url(../img/man-hinh-thac-nuoc-1400x800.jpg);
-    transition: 0.3s ease-in-out;
-}
-
-.background-image-change3{
-    background-image: url(../img/chup-dem.jpg);
-    transition: 0.3s ease-in-out;
 }
 
 .technology-more{

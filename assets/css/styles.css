@@ -27,6 +27,58 @@ a{
     padding-top: 45px;
 }
 
+.slide-show{
+    position: relative;
+    margin: auto;
+}
+
+.slide{
+    display: none;
+}
+
+.dot-wrapper{
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    -webkit-transform: translateX(-50%);
+}
+
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #b1b1b1;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.8s ease;
+}
+  
+.dot:hover {
+    background-color: #636363;
+}
+
+.dot-active{
+    background-color: #636363;
+}
+   
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+   
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+   
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -66,9 +118,6 @@ a{
     transition: 0.5s ease-in-out;
 }
 
-.close-icon:hover{
-    color: rgb(0, 47, 255);
-}
 
 .menu-mob-list{
     margin:0 1.4rem;
@@ -87,10 +136,6 @@ a{
     font-size: 2rem;
     cursor: pointer;
     display: block;
-}
-
-.list-icon:hover{
-    color: rgb(0, 47, 255);
 }
 
 .navbar__logo{
@@ -303,6 +348,7 @@ a{
 
 .explore-wrapper{
     position: relative;
+    margin-top: 0.3rem;
 }
 
 .overlay{
@@ -651,6 +697,7 @@ a{
     -webkit-transform: translateX(-50%);
     margin-top: 4rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     align-items: center;
@@ -659,6 +706,11 @@ a{
 
 .video-text-wrapper p{
     font-size: 1.1rem;
+}
+.video-text-wrapper i{
+    font-size: 3rem;
+    margin-top: 2rem;
+    cursor: pointer;
 }
 
 /*Support CSS*/
@@ -729,7 +781,7 @@ a{
     position: absolute;
     top:50%;
     -webkit-transform: translateY(-50%);
-    right:20px;
+    right:30px;
 }
 
 .services-wrapper{

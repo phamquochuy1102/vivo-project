@@ -38,13 +38,13 @@
                         Sản Phẩm
                     </a>
                 </div>
-                <div class="navbar__list-item">
-                    <a href="" class="navbar__list-item-link">
+                <div onclick="Maintaining()" class="navbar__list-item">
+                    <a href="#" class="navbar__list-item-link">
                         Funtouch OS
                     </a>
                 </div>
-                <div class="navbar__list-item">
-                    <a href="./explore.html" class="navbar__list-item-link">
+                <div onclick="Maintaining()" class="navbar__list-item">
+                    <a href="#" class="navbar__list-item-link">
                         Khám phá
                     </a>
                 </div>
@@ -74,13 +74,13 @@
                         Sản Phẩm
                     </a>
                 </div>
-                <div class="menu-mob-item">
+                <div onclick="Maintaining()" class="menu-mob-item">
                     <a href="" class="navbar__list-item-link">
                         Funtouch OS
                     </a>
                 </div>
-                <div class="menu-mob-item">
-                    <a href="./explore.html" class="navbar__list-item-link">
+                <div onclick="Maintaining()" class="menu-mob-item">
+                    <a href="#" class="navbar__list-item-link">
                         Khám phá
                     </a>
                 </div>
@@ -95,10 +95,33 @@
 
     <!--Intro slide-->
     <section class="intro">
-        <picture class="intro__background">
-            <source media="(max-width:767px)" srcset="https://www.vivosmartphone.vn/uploads/product/v20/vivo-v20-6-mb.jpg">
-            <img src="./assets/img/slideshow-1.jpg" alt="VIVO">
-        </picture>
+       <div class="slide-show">
+           <div class="slide-wrapper">
+               <div class="slide fade">
+                    <picture class="intro__background">
+                        <source media="(max-width:767px)" srcset="https://www.vivosmartphone.vn/uploads/product/v20/vivo-v20-6-mb.jpg">
+                        <img src="./assets/img/slideshow-1.jpg" alt="VIVO">
+                    </picture>
+               </div>
+                <div class="slide fade">
+                    <picture class="intro__background">
+                        <source media="(max-width:767px)" srcset="https://www.vivosmartphone.vn/uploads/home/banner-x50-pro/x50-series-2-500x720.jpg">
+                        <img src="./assets/img/slideshow-2.jpg" alt="VIVO">
+                    </picture>
+                </div>
+                <div class="slide fade">
+                    <picture class="intro__background">
+                        <source media="(max-width:767px)" srcset="https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1609148015560/b31e3b57171a945d1a2bfed494e77a9d.jpg">
+                        <img src="./assets/img/slideshow-4.jpg" alt="VIVO">
+                    </picture>
+               </div>
+           </div>
+       </div>
+       <div class="dot-wrapper" style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+      </div>
     </section>
    
     <!--Type Section-->
@@ -115,7 +138,7 @@
                         <div class="type-describe">
                             Smartphone cao cấp tiên phong công nghệ
                         </div>
-                        <button class="btn-more">Tìm Hiểu Thêm</button>
+                        <button onclick="Maintaining()" class="btn-more">Tìm Hiểu Thêm</button>
                     </div>
                 </div>
                 <div class="type-img-wrapper">
@@ -128,7 +151,7 @@
                         <div class="type-describe">
                             Smartphone thời thượng dẫn đầu xu hướng
                         </div>
-                        <button class="btn-more">Tìm Hiểu Thêm</button>
+                        <button onclick="Maintaining()" class="btn-more">Tìm Hiểu Thêm</button>
                     </div>
                 </div>
                 <div class="type-img-wrapper">
@@ -141,7 +164,7 @@
                         <div class="type-describe">
                             Smartphone phổ thông dành cho mọi người
                         </div>
-                        <button class="btn-more">Tìm Hiểu Thêm</button>
+                        <button onclick="Maintaining()" class="btn-more">Tìm Hiểu Thêm</button>
                     </div>
                 </div>
             </div>
@@ -170,7 +193,7 @@
                         </div>
                     </div>
                     <div id="tech-btn" class="technology-more">
-                        <button class="btn-more">Tìm Hiểu Thêm</button>
+                        <button onclick="Maintaining()" class="btn-more">Tìm Hiểu Thêm</button>
                     </div>
                 </div>
             </div>
@@ -188,7 +211,7 @@
                 <h5>KHÁM PHÁ</h5>
                 <h1>Toàn cảnh sự kiện trực tuyến</h1>
                 <h4>Sự kiện ra mắt sản phẩm vivo V20</h4>
-                <button class="btn-more">Khám phá câu chuyện</button>
+                <button onclick="Maintaining()" class="btn-more">Khám phá câu chuyện</button>
             </div>    
         </div>
 
@@ -204,7 +227,7 @@
                     <h5>KHÁM PHÁ</h5>
                     <h1>Camera Gimbal của vivo X50 Pro</h1>
                     <h3>Mở đầu xu hướng, bước đột phá cho khung hình đúng chuẩn</h3>
-                    <button class="btn-more">Khám phá câu chuyện</button>
+                    <button onclick="Maintaining()" class="btn-more">Khám phá câu chuyện</button>
                 </div>
             </div>
 
@@ -215,7 +238,7 @@
                     <h5>KHÁM PHÁ</h5>
                     <h1>V20</h1>
                     <h3>thiết kế kính mờ siêu mỏng, camera selfie 44 MP</h3>
-                    <button class="btn-more">Khám phá câu chuyện</button>
+                    <button onclick="Maintaining()" class="btn-more">Khám phá câu chuyện</button>
                 </div>
             </div>
         </div>
@@ -230,7 +253,7 @@
                     <h5>CÔNG NGHỆ</h5>
                     <h3>Jovi Thông Minh AI<BR>
                         Trợ lý Cá nhân của Bạn</h3>
-                    <button class="btn-more">Tìm Hiểu Thêm</button>
+                    <button onclick="Maintaining()" class="btn-more">Tìm Hiểu Thêm</button>
                 </div>
             </div>
             <div class="product-wrapper">
@@ -239,7 +262,7 @@
                     <h5>CÔNG NGHỆ</h5>
                     <h3>Cá tính hóa<BR>
                         trải nghiệm người dùng</h3>
-                    <button class="btn-more">Tìm Hiểu Thêm</button>
+                    <button onclick="Maintaining()" class="btn-more">Tìm Hiểu Thêm</button>
                 </div>
             </div>
             <div class="product-wrapper">
@@ -248,7 +271,7 @@
                     <h5>CÔNG NGHỆ</h5>
                     <h3>Tùy chỉnh Chuyên sâu<BR>
                         trên Nền tảng Android 10</h3>
-                    <button class="btn-more">Tìm Hiểu Thêm</button>
+                    <button onclick="Maintaining()" class="btn-more">Tìm Hiểu Thêm</button>
                 </div>
             </div>
         </div>
@@ -365,14 +388,14 @@
                 </div>
             </div>
 
-            <div class="back-to-top">
+            <div onclick="topFunction()" class="back-to-top">
                 <i class='bx bx-up-arrow-circle'></i>
                 <p>Về đầu trang</p> 
             </div>
         </div>
         
         <div class="footer-text">
-            Copyright © 2020 Huy Pham. 
+            Copyright © 2021 Huy Pham. 
             All rights reserved.
         </div>
     </footer>

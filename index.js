@@ -1,3 +1,4 @@
+
 //menu-navbar
 var menuIcon=document.querySelector(".list-icon");
 menuIcon.addEventListener("click",modalCall);
@@ -53,4 +54,48 @@ function modalClose(){
         techBtn.style.display="none";
         document.getElementById("tech-bg").src="https://www.vivosmartphone.vn/uploads/page/home/chup-dem.jpg"
     }
+
+   //back-to-top btn
+   function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+
+    //Maintaining function...
+    function Maintaining(){
+        alert("Xin lỗi, chức năng này đang bảo trì! Vui lòng quay lại sau, from Huy with love <3");
+    }
+
+    function SendSuccess(){
+        alert("Ý kiến của bạn đã được gửi đi, xin cám ơn quý khách!");
+    }
+
+    //slideshow
+    var slideIndex;
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("slide");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" dot-active", "");
+      }
+ 
+      slides[slideIndex].style.display = "block";  
+      dots[slideIndex].className += " dot-active";
+      slideIndex++;
+      if (slideIndex > slides.length - 1) {
+        slideIndex = 0
+      }    
+      setTimeout(showSlides, 5000);
+  }
+  showSlides(slideIndex = 0);
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+
+  
 

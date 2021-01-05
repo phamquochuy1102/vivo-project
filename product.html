@@ -38,13 +38,13 @@
                             Sản Phẩm
                         </a>
                     </div>
-                    <div class="navbar__list-item">
-                        <a href="" class="navbar__list-item-link">
+                    <div onclick="Maintaining()" class="navbar__list-item">
+                        <a href="#" class="navbar__list-item-link">
                             Funtouch OS
                         </a>
                     </div>
-                    <div class="navbar__list-item">
-                        <a href="./explore.html" class="navbar__list-item-link">
+                    <div onclick="Maintaining()" class="navbar__list-item">
+                        <a href="#" class="navbar__list-item-link">
                             Khám phá
                         </a>
                     </div>
@@ -70,11 +70,11 @@
         <section class="product-video">
             <div class="product-videos-wrapper">
                 <div class="product-video-wrapper">
-                    <video poster="./assets/img/video1-img.jpg" width="405" src="./assets/video/vivo-v20-x-jack-tam-diem-anh-nhin.mp4" class="product-video">
+                    <video poster="./assets/img/video1-img.jpg" width="405" src="./assets/video/vivo-v20-x-jack-tam-diem-anh-nhin.mp4" class="product-video" id="product-video-1">
                     </video>
                     <div class="video-text-wrapper">
                         <p>vivo V20 x Jack - Tâm Điểm Ánh Nhìn</p>
-                        <i class='bx bx-play-circle'></i>
+                        <i class='bx bx-play-circle' id="play-btn"></i>
                     </div>
                 </div>
                 <div class="product-video-wrapper">
@@ -218,10 +218,11 @@
             </div>
             
             <div class="footer-text">
-                Copyright © 2020 Mini Dev. 
+                Copyright © 2021 Mini Dev. 
                 All rights reserved.
             </div>
         </footer>
 </body>
+<script src="./index.js"></script>
 
 </html>

@@ -38,13 +38,13 @@
                             Sản Phẩm
                         </a>
                     </div>
-                    <div class="navbar__list-item">
+                    <div onclick="Maintaining()" class="navbar__list-item">
                         <a href="" class="navbar__list-item-link">
                             Funtouch OS
                         </a>
                     </div>
-                    <div class="navbar__list-item">
-                        <a href="./explore.html" class="navbar__list-item-link">
+                    <div onclick="Maintaining()" class="navbar__list-item">
+                        <a href="#" class="navbar__list-item-link">
                             Khám phá
                         </a>
                     </div>
@@ -75,13 +75,13 @@
                             Sản Phẩm
                         </a>
                     </div>
-                    <div class="menu-mob-item">
+                    <div onclick="Maintaining()" class="menu-mob-item">
                         <a href="" class="navbar__list-item-link">
                             Funtouch OS
                         </a>
                     </div>
-                    <div class="menu-mob-item">
-                        <a href="./explore.html" class="navbar__list-item-link">
+                    <div  onclick="Maintaining()" class="menu-mob-item">
+                        <a href="#" class="navbar__list-item-link">
                             Khám phá
                         </a>
                     </div>
@@ -234,11 +234,11 @@
                             <form>
                                 <div>
                                      <label for="">Your Name<br></label>
-                                     <input type="text">
+                                     <input type="text" id="name">
                                 </div>
                                  <div>
                                      <label for="">Your Email<br></label>
-                                     <input type="text">
+                                     <input type="text" id="email">
                                  </div>
                                  <div>
                                      <label  for="">Question<br></label>
@@ -246,7 +246,7 @@
                                  </div>
                              </form>
                         </div>
-                        <button class="btn-more">Send</button>
+                        <button onclick="SendSuccess()" class="btn-more">Send</button>
                     </div>
                 </div>
             </div>
@@ -363,17 +363,50 @@
                     </div>
                 </div>
 
-                <div class="back-to-top">
+                <div onclick="topFunction()" class="back-to-top">
                     <i class='bx bx-up-arrow-circle'></i>
                     <p>Về đầu trang</p> 
                 </div>
             </div>
             
             <div class="footer-text">
-                Copyright © 2020 Huy Pham. 
+                Copyright © 2021 Huy Pham. 
                 All rights reserved.
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> 
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+        <script src="./superplaceholder.min.js"></script>
+        <script>
+              superplaceholder({
+                el: document.getElementById('name'),
+                sentences: [ 'Enter your name here'],
+                options: {
+                letterDelay: 100,
+                sentenceDelay: 1000,
+                startOnFocus: false, 
+                loop: true,
+                shuffle: false,
+                showCursor: true,
+                cursor: '|',
+                }
+             });
+                superplaceholder({
+                    el: document.getElementById('email'),
+                    sentences: [ 'Enter your email here'],
+                    options: {
+                    letterDelay: 100,
+                    sentenceDelay: 1000,
+                    startOnFocus: false, 
+                    loop: true,
+                    shuffle: false,
+                    showCursor: true,
+                    cursor: '|',
+                    }
+                });
+        </script>
 </body>
 <script src="./index.js"></script>
 </html>

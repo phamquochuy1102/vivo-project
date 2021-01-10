@@ -260,7 +260,6 @@ a{
 
 .background-base{
     background-color: black;
-    height: 840px;
     margin-bottom: 0rem;
 }
 
@@ -280,13 +279,14 @@ a{
 
 .technology-info{
     position: relative;
+    height: 100vh;
 }
 
 .technology-info img{
     position: absolute;
-    width: 100%;
     left: 50%;
     top: 0px;
+    height: 100%;
     -webkit-transform: translateX(-50%);
 }
 

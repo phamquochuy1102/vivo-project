@@ -45,14 +45,14 @@ function modalClose(){
 
     typeBtns[1].addEventListener("click",changebg1);
     function changebg1(){
-       document.getElementById("tech-bg").src="https://www.vivosmartphone.vn/uploads/home/man-hinh-thac-nuoc-1400x800.jpg"
+       document.getElementById("tech-bg").src="https://thietbiketnoi.com/wp-content/uploads/2019/11/danh-gia-vivo-nex3-voi-man-hinh-thac-nuoc-3.jpg"
        techBtn.style.display="none";
     }
 
     typeBtns[2].addEventListener("click",changebg2);
     function changebg2(){
         techBtn.style.display="none";
-        document.getElementById("tech-bg").src="https://www.vivosmartphone.vn/uploads/page/home/chup-dem.jpg"
+        document.getElementById("tech-bg").src="https://i.ytimg.com/vi/GprtoIJ3J50/maxresdefault.jpg"
     }
 
    //back-to-top btn

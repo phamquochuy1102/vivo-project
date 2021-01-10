@@ -287,6 +287,7 @@ a{
     left: 50%;
     top: 0px;
     height: 100%;
+    width: 100%;
     -webkit-transform: translateX(-50%);
 }
 
@@ -662,7 +663,6 @@ a{
 }
 
 /*Footer*/
-
 .footer-text{
     background-color: black;
     padding: 1rem;
@@ -691,6 +691,7 @@ a{
 
 .product-video-wrapper video{
     cursor: pointer;
+    padding-bottom: 2rem;
 }
 
 /* .product-video-wrapper video:hover{
@@ -744,6 +745,8 @@ a{
     color:#415FFF;
     border-bottom: 1px solid #415FFF;
 }
+
+
 
 
 /*Support CSS*/

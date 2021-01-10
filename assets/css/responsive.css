@@ -25,7 +25,6 @@
         display: none;
     }       
     .background-base{
-        height: 400px;
     }
     .type-imgs-wrapper{
         grid-template-columns: 1fr;
@@ -61,15 +60,22 @@
         border:none;
         font-weight: 600;
     }
+    .technology-info{
+        height: 50vh;
+    }
     .technology-info img{
         margin-top: 10px;
-        width: 580px;
+        width: 130%;
     }
     .btn-more{
         width: 12rem;
     }
     .explore{
         padding: 1rem 0 1rem 0;
+    }
+    .explore-more-wrapper{
+        grid-template-columns: 1fr;
+        padding: 0;
     }
     .explore-text{
         width: 100%;

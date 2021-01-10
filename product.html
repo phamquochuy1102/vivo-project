@@ -59,49 +59,114 @@
                     <i class='bx bx-search'></i>
                 </div>
             </div>
+
+            <!--Mobile nav-->
+            <div class="menu-modal">
+                <div class="close-icon">
+                    <i class='bx bx-x'></i>
+                </div>
+                <div class="menu-mob-list">
+                    <div class="menu-mob-item">
+                        <a href="./index.html" class="navbar__list-item-link active">
+                            Trang Chủ
+                        </a>
+                    </div>
+                    <div class="menu-mob-item">
+                        <a href="./product.html" class="navbar__list-item-link">
+                            Sản Phẩm
+                        </a>
+                    </div>
+                    <div onclick="Maintaining()" class="menu-mob-item">
+                        <a href="" class="navbar__list-item-link">
+                            Funtouch OS
+                        </a>
+                    </div>
+                    <div onclick="Maintaining()" class="menu-mob-item">
+                        <a href="#" class="navbar__list-item-link">
+                            Khám phá
+                        </a>
+                    </div>
+                    <div class="menu-mob-item">
+                        <a href="./support.html" class="navbar__list-item-link">
+                            Hỗ trợ
+                        </a>
+                    </div>
+                </div>
+            </div>
         </header>
 
-        <!--Intro slide-->
+        <!--Intro-->
         <section class="intro">
-            <div class="product-intro-background bg-img full-height">
-            </div>
+            <picture class="intro__background">
+                <source media="(max-width:767px)" srcset="https://www.vivosmartphone.vn/uploads/home/banner-x50-pro/x50-series-2-500x720.jpg">
+                <img src="./assets/img/slideshow-2.jpg" alt="VIVO">
+            </picture>
         </section>
 
         <section class="product-video">
             <div class="product-videos-wrapper">
                 <div class="product-video-wrapper">
-                    <video poster="./assets/img/video1-img.jpg" width="405" src="./assets/video/vivo-v20-x-jack-tam-diem-anh-nhin.mp4" class="product-video" id="product-video-1">
-                    </video>
-                    <div class="video-text-wrapper">
+                   <video width="380" src="./assets/video/v20-selfie-lay-net-tu-dong-theo-mat-44mp.mp4" controls></video>
+                    <!-- <div class="video-text-wrapper">
                         <p>vivo V20 x Jack - Tâm Điểm Ánh Nhìn</p>
-                        <i class='bx bx-play-circle' id="play-btn"></i>
-                    </div>
+                        <i onclick="playVideo()" class='bx bx-play-circle' id="play-btn"></i>
+                    </div> -->
                 </div>
                 <div class="product-video-wrapper">
-                    <video poster="./assets/img/video2-img.jpg" width="405" src="./assets/video/vivo-v20-x-jack-tam-diem-anh-nhin.mp4" class="product-video">
-                    </video>
-                    <div class="video-text-wrapper">
+                    <video width="380" src="./assets/video/vivo-v20-x-jack-tam-diem-anh-nhin.mp4" controls></video>
+                    <!-- <div class="video-text-wrapper">
                         <p>V20 - Selfie Lấy Nét Tự Động Theo Mắt 44MP</p>
                         <i class='bx bx-play-circle'></i>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="product-video-wrapper">
-                    <video poster="./assets/img/video3-img.jpg" width="405" src="./assets/video/vivo-v20-x-jack-tam-diem-anh-nhin.mp4" class="product-video">
-                    </video>
-                    <div class="video-text-wrapper">
+                    <video width="380" src="./assets/video/vivo-v20.mp4" controls></video>
+                    <!-- <div class="video-text-wrapper">
                         <p>vivo V20</p>
                         <i class='bx bx-play-circle'></i>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
 
-        <section class="product">
-
+        <!--Product-->
+        <section class="product-wrapper">
+            <div class="product__nav--wrapper">
+                <div class="product__nav--item-wrapper ">
+                    <a class="product__nav--item product__nav--active">
+                        Tất cả 
+                    </a>
+                </div>
+                <div class="product__nav--item-wrapper">
+                    <a class="product__nav--item">
+                        Dòng X
+                    </a>
+                </div>
+                <div class="product__nav--item-wrapper">
+                    <a class="product__nav--item">
+                        Dòng Y
+                    </a>
+                </div>
+                <div class="product__nav--item-wrapper">
+                    <a class="product__nav--item">
+                        Dòng S
+                    </a>
+                </div>
+                <div class="product__nav--item-wrapper">
+                    <a class="product__nav--item">
+                        Dòng V
+                    </a>
+                </div>
+                <div class="product__nav--item-wrapper">
+                    <a class="product__nav--item">
+                        Dòng U
+                    </a>
+                </div>
+            </div>
         </section>
         
         <!--Footer-->
-        <footer class="footer">
+        <footer class="footer  wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
             <div class="above-wrapper ">
                 <div class="above-info">
                     <div class="above-info-wrapper">
@@ -167,7 +232,7 @@
                     </div>
                 </div>
             </div>
-
+    
             <div class="below-wrapper">
                 <div class="below-wrapper-info">
                     <div class="below-info-text">
@@ -188,41 +253,40 @@
                     </div>
                 </div>
             </div>
-
+    
             <div class="footer-wrapper">
                 <div class="contact-follow">
                     <div class="follow-wrapper">
                         <p>Follow us: </p>
-                        <div class="contact-icon">
+                        <div class="contact-icon contact-icon-fb">
                             <a href="https://m.facebook.com/vivoVietnam/" target="_blank" class="contact-link">
                                 <i class='bx bxl-facebook-circle'></i>
                             </a>
                         </div>
-                        <div class="contact-icon">
+                        <div class="contact-icon contact-icon-insta">
                             <a href="https://www.instagram.com/accounts/login/?next=/vivo_vietnam/" target="_blank" class="contact-link">
                                 <i class='bx bxl-instagram'></i>
                             </a>
-                        </div>
-                        <div class="contact-icon">
+                        </div> 
+                        <div class="contact-icon contact-icon-youtube">
                             <a href="https://m.youtube.com/channel/UCWz0GKpp6qOtV3N7e3T_bzA" target="_blank" class="contact-link">
                                 <i class='bx bxl-youtube'></i>
                             </a>
                         </div>
                     </div>
                 </div>
-
-                <div class="back-to-top">
+    
+                <div onclick="topFunction()" class="back-to-top">
                     <i class='bx bx-up-arrow-circle'></i>
-                    <p>Về đầu trang</p> 
+                    <p><b>BACK TO TOP</b></p> 
                 </div>
             </div>
             
             <div class="footer-text">
-                Copyright © 2021 Mini Dev. 
+                Copyright © 2021 Huy Pham. 
                 All rights reserved.
             </div>
         </footer>
 </body>
 <script src="./index.js"></script>
-
 </html>

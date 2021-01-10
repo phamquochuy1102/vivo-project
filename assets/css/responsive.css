@@ -7,6 +7,9 @@
     }
 }
 @media screen and (max-width:767px){
+    .dot{
+        display: none;
+    }
     .navbar{
         background-color: black;
         padding: 8px 20px 2px;
@@ -38,21 +41,21 @@
     }
     .technology-small-part{
         top:1rem;
+        width: 100%;
+        scroll-snap-type: x mandatory;
+
     }
     .technology-type{
         position: relative;
-        overflow-x: visible;
-        width: 330px;
         display: flex;
-        flex-direction: row;
-        margin:0.5rem 4rem 0rem 4rem;
+        overflow-x: auto;
     }
     .technology-type-link{
         color: grey;
         font-size: 1rem;
         text-align: center;
-        width: 100%; 
-        padding: 0 0 1rem 0;
+        padding: 0 0px 1rem 0;
+        scroll-snap-align: start;
     }
     .technology-type .techactive{
         border:none;
@@ -290,5 +293,9 @@
         font-size: 1.2rem;
         height: 10rem;
         margin-bottom: 1rem;
+    }
+    /*Product page*/
+    .product-videos-wrapper{
+        grid-template-columns: 1fr;
     }
 }

@@ -97,5 +97,10 @@ function modalClose(){
   }
 
 
+// var video1=document.querySelectorAll(".product-video")[0];
+// function playVideo(){
+//     video1.play();
+// }
+
   
 

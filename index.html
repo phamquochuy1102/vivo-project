@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./WOW-master/WOW-master/css/libs/animate.css">
 </head>
 
 <body>
@@ -125,10 +127,10 @@
     </section>
    
     <!--Type Section-->
-    <section class="type-section">
+    <section class="type-section>
         <div class="container">
             <div class="type-imgs-wrapper">
-                <div class="type-img-wrapper">
+                <div class="type-img-wrapper wow fadeInDown" data-wow-offset="250"  data-wow-iteration="1">
                     <div class="type-img bg-img" style="background-image: url(/assets/img/type1.jpg);">
                     </div>
                     <div class="type-text-wrapper">
@@ -141,7 +143,7 @@
                         <button onclick="Maintaining()" class="btn-more">Tìm Hiểu Thêm</button>
                     </div>
                 </div>
-                <div class="type-img-wrapper">
+                <div class="type-img-wrapper wow fadeInUp" data-wow-offset="250"  data-wow-iteration="1">
                     <div class="type-img bg-img" style="background-image: url(/assets/img/type2.png);">
                     </div>
                     <div class="type-text-wrapper">
@@ -154,7 +156,7 @@
                         <button onclick="Maintaining()" class="btn-more">Tìm Hiểu Thêm</button>
                     </div>
                 </div>
-                <div class="type-img-wrapper">
+                <div class="type-img-wrapper wow fadeInRight" data-wow-offset="250"  data-wow-iteration="1">
                     <div class="type-img bg-img" style="background-image: url(/assets/img/type3.png);">
                     </div>
                     <div class="type-text-wrapper">
@@ -172,7 +174,7 @@
     </section>
 
     <!--Technology Section-->
-    <section class="technology background-base">
+    <section class="wow fadeIn technology background-base" data-wow-duration="1s" data-wow-delay="0.5s">
         <div class="technology-wrapper">
             <h1>NGƯỜI KIẾN TẠO</h1>
             <div class="technology-info">
@@ -201,7 +203,7 @@
     </section>
     
     <!--Explore Section-->
-    <section class="explore">
+    <section class="explore wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
        <div class="explore-wrapper">
             <div class="explore-background bg-img full-height">
             </div>
@@ -218,8 +220,8 @@
     </section>
 
     <!--Explore-1-->
-    <section class="explore-1">
-        <div class="explore-1-wrapper">
+    <section class="explore-more wow fadeIn "data-wow-duration="0.8s" data-wow-delay="0.5s">
+        <div class="explore-more-wrapper">
             <div class="explore-first">
                 <div class="first-background bg-img full-height"></div>
                 <div class="modal-1"></div>
@@ -245,7 +247,7 @@
     </section>
 
     <!--About Product-->
-    <section class="about-product">
+    <section class="about-product wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
         <div class="products-wrapper">
             <div class="product-wrapper">
                 <div class="product-background1 bg-img full-height"></div>
@@ -278,7 +280,7 @@
     </section>
 
     <!--Footer-->
-    <footer class="footer">
+    <footer class="footer  wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
         <div class="above-wrapper ">
             <div class="above-info">
                 <div class="above-info-wrapper">
@@ -370,17 +372,17 @@
             <div class="contact-follow">
                 <div class="follow-wrapper">
                     <p>Follow us: </p>
-                    <div class="contact-icon">
+                    <div class="contact-icon contact-icon-fb">
                         <a href="https://m.facebook.com/vivoVietnam/" target="_blank" class="contact-link">
                             <i class='bx bxl-facebook-circle'></i>
                         </a>
                     </div>
-                    <div class="contact-icon">
+                    <div class="contact-icon contact-icon-insta">
                         <a href="https://www.instagram.com/accounts/login/?next=/vivo_vietnam/" target="_blank" class="contact-link">
                             <i class='bx bxl-instagram'></i>
                         </a>
-                    </div>
-                    <div class="contact-icon">
+                    </div> 
+                    <div class="contact-icon contact-icon-youtube">
                         <a href="https://m.youtube.com/channel/UCWz0GKpp6qOtV3N7e3T_bzA" target="_blank" class="contact-link">
                             <i class='bx bxl-youtube'></i>
                         </a>
@@ -390,7 +392,7 @@
 
             <div onclick="topFunction()" class="back-to-top">
                 <i class='bx bx-up-arrow-circle'></i>
-                <p>Về đầu trang</p> 
+                <p><b>BACK TO TOP</b></p> 
             </div>
         </div>
         
@@ -399,10 +401,13 @@
             All rights reserved.
         </div>
     </footer>
-
     
 
 </body>
 <!--Script file-->
 <script src="./index.js"></script>
+<script src="./WOW-master/WOW-master/dist/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </html> 

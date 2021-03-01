@@ -704,7 +704,7 @@ a{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
     padding: 120px 130px ;
-    background-color:#F7F7F7;
+    background-color:#f1f1f1;
     margin-top: 50px;
 }
 
@@ -733,6 +733,7 @@ a{
     align-items: center;
     text-align: center;
     font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .product__btn{
@@ -742,13 +743,17 @@ a{
     width: 10rem;
     border: 1px solid white;
     border-radius: 2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
     cursor: pointer;
     transition: 0.3s ease-in-out;
     outline: none;
-    background-color: blue;
-    display: none;
+    background-color: #3a57ff;
+    display: block;
+}
+
+.product__btn:hover{
+    opacity: 0.8;
 }
 
 .product__detail:hover{
@@ -763,7 +768,7 @@ a{
    display: grid;
    grid-template-columns:1fr 1fr;
     margin:0 130px;
-    padding-top: 50px;
+    padding: 100px 0 50px;
 }
 
 .product__foryou--img{

@@ -339,7 +339,7 @@
     }
     .product__detail{
         padding:10px 10px 20px 10px;
-        background-color:white;
+        background-color:#fbfbfb;
         margin:  5px;
         cursor: pointer;
         align-items: center;
@@ -348,6 +348,9 @@
     }
     .product__img img{
         height:110px;
+    }
+    .product__btn{
+       display:inline-block;
     }
     .product__foryou{
         display: grid;
@@ -581,7 +584,7 @@
         margin-bottom: 1rem;
     }
     .support-text input{
-        width: 250px;
+        width: 210px;
         height: 40px;
         font-size: 1rem;
     }
@@ -709,6 +712,9 @@
     }
     .product__img img{
         height:110px;
+    }
+    .product__btn{
+        display: none;
     }
     .product__foryou{
         display: grid;

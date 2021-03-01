@@ -6,6 +6,377 @@
         display: none !important;
     }
 }
+@media screen and (max-width:1199px){
+    .dot{
+        display: block;
+    }
+    .navbar{
+        background-color: black;
+        padding: 13px 20px 2px;
+        color:white;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .list-icon{
+        display: block;
+    }
+    .navbar__list{
+        display: none;
+    }       
+    .type-imgs-wrapper{
+        grid-template-columns: 1fr;
+        padding-top: 0rem;
+    }
+    .type-img{
+        width: 100%;
+        height: 600px;
+    }
+    .type-text-wrapper{
+        left:50%;
+        -webkit-transform: translateX(-50%);
+        padding:0 1rem;
+    }
+    .type-describe{
+        margin-bottom:1.4rem;
+    }
+    .technology-wrapper h1{
+        font-size: 1.8rem;
+        padding-top: 1.5rem;
+        margin-bottom: 0rem;
+    }
+    .technology-small-part h2{
+        font-size: 1.3rem;
+    }
+    .technology-small-part{
+        top:1rem;
+        width: 100%;
+        scroll-snap-type: x mandatory;
+    }
+    .technology-type{
+        position: relative;
+        display: flex;
+        justify-content:center;
+        overflow-x: auto;
+    }
+    .technology-type-link{
+        color: grey;
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 1rem 1rem 0;
+        scroll-snap-align: start;
+    }
+    .technology-type .techactive{
+        border:none;
+        font-weight: 600;
+    }
+    .technology-info{
+        height: 50vh;
+    }
+    .technology-info img{
+        margin-top: 10px;
+        width: 130%;
+    }
+    .btn-more{
+        width: 12rem;
+    }
+    .explore{
+        padding: 1rem 0 1rem 0;
+    }
+    .explore-more-wrapper{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .explore-text{
+        width: 100%;
+    }
+    .explore-text h1{
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    .explore-text h4{
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+    .explore-1-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .explore-first{
+        margin: 0;
+    }
+    .explore-second{
+        margin: 0;
+    }
+    .first-text{
+        padding: 0 20px;
+    }
+    .first-text h1{
+        font-size: 1.3rem;
+        margin-bottom: 1.4rem;
+        font-weight: 600;
+    }
+    .first-text h3{
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+        font-weight: 500;
+    }
+    .second-text h1{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+    .second-text h3{
+        font-size: 1rem;
+        margin-bottom: 1.2rem;
+        font-weight: 500;
+    }
+    .products-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .product-text h3{
+        font-weight: 600;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+    .above-info-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .above-info{
+        padding:2rem 1rem;
+    }
+    .above-info-wrapper>div:first-child{
+        margin-bottom: 1rem;
+    }
+    .above-info-wrapper>div:nth-child(4){
+        padding-left: 2rem;
+    }
+    .above-info-wrapper>div:nth-child(2){
+        padding-left: 2rem;
+    }
+    .info-link a{
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: rgb(58, 58, 58);
+        line-height: 2rem;
+    }
+    .below-wrapper-info{
+        display: inline-block;
+        padding:0rem 0rem;
+        align-items: center;
+        text-align: center;
+    }
+    .below-info-text{
+        padding: 0 1rem;
+    }
+    .below-info-text h1{
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    .below-text{
+        color: rgb(53, 53, 53);
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+    }
+    .footer-wrapper{
+        padding:0.7rem 1rem;
+    }
+    .follow-wrapper {
+        font-size: 1.1rem;
+    }
+    .back-to-top{
+        font-size: 0.9rem;
+    }
+    .footer-text{
+        font-size: 1rem;
+    }
+
+    /*SP Res*/
+    .sp-intro{
+        max-width: initial;
+        width: 100%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        position: relative;
+    }
+    .support-text{
+        margin-top: 2rem;
+    }
+    .support-text h1{
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 0.3rem;
+    }
+    .support-text p{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .support-text input{
+        width: 300px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    .services-wrapper{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .service-wrapper{
+        margin: 1.2rem 3rem 0.5rem;
+    }
+    .service-wrapper h1{
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+    .service-wrapper p{
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+    .faq-nav{
+        display: none;
+    }
+    .faq-detail{
+        margin-left: 0rem;
+        padding-left: 0rem;
+        border: none;
+        width: 100%;
+    }
+    .faq-wrapper{
+        padding: 5rem;
+    }
+    .faq-info{
+        grid-template-columns: 1fr;
+    }
+    .faq-wrapper h1{
+        margin-bottom: 2rem;
+    }
+    .faq-wrapper h1{
+        font-size: 2.4rem;
+    }
+    .detail-item-wrapper h2{
+        font-size: 1.2rem;
+    }
+    .detail-item-wrapper p{
+        font-size: 1rem;
+    }
+    .support-contact-wrapper{
+        padding:2rem 1rem;
+    }
+    .support-contact-wrapper h1{
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    .support-contact-form-wrap{
+        padding: 2rem 0;
+    }
+    .support-hotline h2{
+        font-size: 1.6rem;
+    }
+    .support-hotline p{
+        font-size: 1.4rem;
+    }
+    .support-form{
+        margin-top: 2rem;
+    }
+    .support-form h2{
+        font-size: 1.6rem;
+    }
+    .support-form p{
+        font-size: 1.1rem;
+    }
+    .form{
+        width: 500px;
+        margin: auto;
+    }    
+    .form>form>div>label{
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+    .form>form>div>input{
+        font-size: 1.4rem;
+    }
+    .form>form>div>textarea{
+        font-size: 1.4rem;
+        height: 14rem;
+        margin-bottom: 1rem;
+    }
+    /*Product page*/
+    .product-videos-wrapper{  
+        grid-template-columns: 1fr;
+    }
+    .product-video-wrapper video{
+        width:600px;
+    }
+    .product__nav--wrapper{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+    }
+    .product__nav--item-wrapper {
+        margin:0.8rem 0;
+    }
+    .product__nav--item{
+        margin:0
+    }
+    .product__detail--wrapper{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        padding: 80px 0px ;
+        background-color:#F7F7F7;
+        margin-top: 20px;
+    }
+    .product__detail{
+        padding:10px 10px 20px 10px;
+        background-color:white;
+        margin:  5px;
+        cursor: pointer;
+        align-items: center;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+    }
+    .product__img img{
+        height:110px;
+    }
+    .product__foryou{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        margin:0 ;
+        padding-top: 0px;
+     }
+     .product__foryou--img{
+         margin:auto;
+         padding-left:50px;
+         display:block;
+     }
+     .product__foryou--img img{
+         width: 100%;
+     }
+     .product__foryou--title{
+         padding: 15%;
+     }
+     .product__foryou--title p{
+         font-size:2rem;
+         font-weight:800;
+         line-height: 40px;
+     }
+     .compare-btn{
+         height:2.2rem;
+         width: 8.5rem;
+         font-size: 1rem;
+     }
+}
 @media screen and (max-width:767px){
     .dot{
         display: none;
@@ -301,7 +672,7 @@
         margin-bottom: 1rem;
     }
     /*Product page*/
-    .product-videos-wrapper{
+    .product-videos-wrapper{  
         grid-template-columns: 1fr;
     }
     .product-video-wrapper video{

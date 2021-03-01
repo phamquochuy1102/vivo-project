@@ -10,6 +10,7 @@ html, body{
     font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif; 
     background-color: white;
     scroll-behavior: smooth;
+    letter-spacing: 0.7px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -38,9 +39,10 @@ a{
 
 .dot-wrapper{
     position: absolute;
-    bottom: -50px;
+    bottom: -40px;
     left:50%;
     -webkit-transform: translateX(-50%);
+    display: flex;
 }
 
 .dot {
@@ -50,7 +52,7 @@ a{
     margin: 0 2px;
     background-color: #b1b1b1;
     border-radius: 50%;
-    display: none;
+    display: block;
     transition: background-color 0.8s ease;
 }
   
@@ -61,7 +63,7 @@ a{
 .dot-active{
     background-color: #636363;
 }
-   
+
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 3s;
@@ -128,6 +130,8 @@ a{
     font-weight: 500;
     border-bottom: 1px solid #444;
     padding-bottom: 0.4rem;
+    align-items: center;
+    text-align: center;
 }
 
 .list-icon{
@@ -272,7 +276,7 @@ a{
 .technology-wrapper h1{
     text-align: center;
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
     padding-top: 1rem;
     margin-bottom: 0.5rem;
 }
@@ -301,8 +305,8 @@ a{
 
 .technology-small-part h2{
     text-align: center;
-    font-weight: 500;
-    font-size: 1.8rem;
+    font-weight: 600;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -776,7 +780,7 @@ a{
 
 .product__foryou--title p{
     font-size:2.5rem;
-    font-weight:800;
+    font-weight:600;
     line-height: 50px;
 }
 

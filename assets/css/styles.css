@@ -39,7 +39,7 @@ a{
 
 .dot-wrapper{
     position: absolute;
-    bottom: -40px;
+    bottom:-10px;
     left:50%;
     -webkit-transform: translateX(-50%);
     display: flex;

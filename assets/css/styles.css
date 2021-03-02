@@ -728,6 +728,14 @@ a{
     text-align: center;
 }
 
+.product__img-hover-moveup{
+    transition:.3s ease;
+}
+
+.product__img-hover-moveup:hover{
+    transform:translate(0,-10px);
+}
+
 .product__name{
     margin-top:10px;
     align-items: center;
